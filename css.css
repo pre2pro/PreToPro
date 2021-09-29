@@ -102,7 +102,11 @@
     padding-left: 8px;
   }
   .footer {
-    background-color: gray;
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    justify-content: center;
     grid-column-start: 1;
     grid-column-end: -1;
   }

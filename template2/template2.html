@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Positioning</title>
-  </head>
 
-  <link
-  rel="icon"
-  type="image/png"
-  sizes="64x64"
-  href="./2.png"
-/>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template2</title>
+</head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./template.css" />
+<link rel="icon" type="image/png" sizes="64x64" href="./2.png" />
 
-  <body>
-    <div class="container">
-      <div class="header" ><h3>Pre2Pro</h3></div>
-      <div class="menu" onclick="onclickmenu()">
-        <nav>
-          <ul class="navm" id="navmenu">
-            <li><a href="#">Code</a></li>
-            <li><a href="#cont">Explanation</a></li>
-            <li><a href="#">Complexity</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="content">
-        <div id="recent">
-          <h2 class="this">Code</h2>
-          <div class="flex-container">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./template2.css" />
 
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam neque placeat sit maiores excepturi cupiditate harum minus a consectetur asperiores eos, pariatur repellendus nisi molestiae est officia assumenda quibusdam odit officiis ex soluta, m</div>
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam neque placeat sit maiores excepturi cupiditate harum minus a consectetur asperiores eos, pariatur repellendus nisi molestiae est officia assumenda quibusdam odit officiis ex soluta, m</div>
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam neque placeat sit maiores excepturi cupiditate harum minus a consectetur asperiores eos, pariatur repellendus nisi molestiae est officia assumenda quibusdam odit officiis ex soluta, m</div>
-
-          </div>
-        </div>
-        <div id="most">
-          <h2 class="this"></h2>
-          <div class="flex-container">
-
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam neque placeat sit maiores excepturi cupiditate harum minus a consectetur asperiores eos, pariatur repellendus nisi molestiae est officia assumenda quibusdam odit officiis ex soluta, m</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur cumque accusantium dolor suscipit, similique non dolorum odio eaque sint optio minima sed deleniti? Eos nesciunt dolores expedita et! Provident necessitatibus doloribus ut </div>
-            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatem aliquam cumque facere consequuntur nam numquam sit? Vero sapiente dolores consectetur nulla omnis, hic incidunt natus eligendi cum repellat, adipisci, libero quis </div>
-          </div>
-        </div>
-        <div id="most">
-          <h2 class="this">Most Viewed</h2>
-          <div class="flex-container">
-
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam neque placeat sit maiores excepturi cupiditate harum minus a consectetur asperiores eos, pariatur repellendus nisi molestiae est officia assumenda quibusdam odit officiis ex soluta, m</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur cumque accusantium dolor suscipit, similique non dolorum odio eaque sint optio minima sed deleniti? Eos nesciunt dolores expedita et! Provident necessitatibus doloribus ut </div>
-            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatem aliquam cumque facere consequuntur nam numquam sit? Vero sapiente dolores consectetur nulla omnis, hic incidunt natus eligendi cum repellat, adipisci, libero quis </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">Footer</div>
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>Pre2Pro</h3>
     </div>
-  </body>
+    <div class="menu" onclick="onclickmenu()">
+      <nav>
+        <ul class="navm" id="navmenu">
+          <li><a href="#code">Code</a></li>
+          <li><a href="#explain">Explanation</a></li>
+          <li><a href="#complex">Complexity</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+    <div class="content">
+      <div id="code">
+        <h2>Code</h2>
+
+        <p>
+          
+          #include<stdio.h>     
+            
+            void main(){
+                int a[10][10], b[10][10], sum[10][10], i,j,n;
+            
+                printf("Enter the size of the square matrix: ");
+                scanf("%d", &n);
+                //a
+                printf("Enter the Elements of the matrix a of size %d x %d", n,n);
+                for(i=0; i<n; i++)
+                    {
+                        for(j=0; j<n; j++)
+                        scanf("%d", &a[i][j]);
+                    }
+            //b
+                printf("Enter the Elements of the matrix b of size %d x %d", n,n);
+                for(i=0; i<n; i++)
+                    {
+                        for(j=0; j<n; j++)
+                        scanf("%d", &b[i][j]);
+                    }
+            //sum a+b
+                printf("Sum of two matrices a & b is \n");
+                for(i=0; i<n; i++){
+                  for(j=0; j<n; j++)
+                            sum[i][j]= a[i][j] + b[i][j];
+                }
+            
+                for(i=0; i<n; i++){
+                  for(j=0; j<n; j++){
+                    printf("%4d", sum[i][j]);
+                  }
+                  printf("\n");
+                }
+              }
+              
+              
+            </p>
+      </div>
+      <div id="explain">
+        <h2>Explanation</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt similique rem, adipisci, aliquid dolores voluptatibus laborum, earum eaque deleniti in suscipit quidem minima vitae veniam excepturi id? Numquam ea eaque a aspernatur officia mollitia error harum amet porro, nesciunt quis doloribus dolore tempora culpa labore quaerat sed commodi et vero eveniet odit illum fugit. Distinctio similique dicta reiciendis tempora facere eius enim modi ut! Repudiandae ratione, iste debitis blandiero suscipit vitae totam quia perferendis libero harum minus nam eum id exercitationem voluptas consequatur quidem animi optio? Impedit consectetur quia fugit nemo, laipsam, placeat laborum praesentium laudantium consequuntur, debitis ex eius alias similique explicabo enim eum quisquam est ab. A commodi laboriosam nostrum aspernatur ullam, voluptatum quibusdam sit pariatur veritatis similique soluta culpa temporibus at expedita ipsum, velit possimus voluptate libero adipisci fuga quos quisquam? At animi iure, numquam rem recusandae quos eius aut vitae blanditiis ab dolorum, excepturi a autem beatae mollitia neque modi explicabo, voluptatem natus. Error minus pariatur amet soluta nam dolorem, harum, molestiae libero impedit ver
+        </p>
+
+      </div>
+      <div id="complex">
+        <h2>Complexity</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt similique rem, adipisci, aliquid dolores voluptatibus laborum, earum eaque deleniti in suscipit quidem minima vitae veniam excepturi id? Numquam ea eaque a aspernatur officia mollitia error harum amet porro, nesciunt quis doloribus dolore tempora culpa labore quaerat sed commodi et vero eveniet odit illum fugit. Distinctio similique dicta reiciendis tempora facere eius enim modi ut! Repudiandae ratione, iste debitis blandiero suscipit vitae totam quia perferendis libero harum minus nam eum id exercitationem voluptas consequatur quidem animi optio? Impedit consectetur quia fugit nemo, laipsam, placeat laborum praesentium laudantium consequuntur, debitis ex eius alias similique explicabo enim eum quisquam est ab. A commodi laboriosam nostrum aspernatur ullam, voluptatum quibusdam sit pariatur veritatis similique soluta culpa temporibus at expedita ipsum, velit possimus voluptate libero adipisci fuga quos quisquam? At animi iure, numquam rem recusandae quos eius aut vitae blanditiis ab dolorum, excepturi a autem beatae mollitia neque modi explicabo, voluptatem natus. Error minus pariatur amet soluta nam dolorem, harum, molestiae libero impedit ver
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="footer">copyright &copy; &nbsp&nbsp&nbsp www.pretopro.github.io &nbsp&nbsp&nbsp All rights reserved
+    </div>
+  </div>
+</body>
+
 </html>
 
+
+<!-- hints:
+1. Remove some contents which are commented to remove  -->

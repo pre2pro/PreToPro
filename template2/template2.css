@@ -18,9 +18,7 @@
     font-family: "Roboto Mono", monospace;
     text-align: center;
   }
-  /* div.header{ */
-    /* position: sticky; */
-  /* } */
+  
   .menu {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -32,10 +30,7 @@
   #navmenu {
     padding: 0px;
   }
-  /* .navm, .navm > li , .navm > li > a{
-          background-color: red; 
-          
-      } */
+ 
   #navmenu > li {
     list-style-type: none;
     padding: 10px 20px;
@@ -56,50 +51,54 @@
     grid-column-end: -1;
     display: grid;
     grid-template-rows: 1000px 1000px 1000px;
-      /* grid-column-start: 3; */
-    /* grid-column-end: -1; */
+   
   }
-  #lang {
-    border: 2px solid cyan;
-    height: 40px;
-    margin: 20px 10px;
-    padding: 26px 13px;
-    background-color: rgba(71, 69, 80, 0.281);
   
+  #code{
+    margin: 20px 0px;
+    border: 2px solid red;              /*  remove */
+    padding: 38px 53px;
   }
-  #lang > a {
-    text-decoration: wavy;
+  #code>h2{
+    font-size: 4rem;
     text-align: center;
-    border: 2px solid cyan;
-    border-radius: 14px;
-    height: 30px;
-    font-size: x-large;
-    padding: 3px 69px;
-    margin: 4px;
   }
-  #lang > a:hover {
-    color: cyan;
-    border-color: blue;
-  }
-  /* #recent {
-  } */
-  .flex-container {
-    display: flex;
-  }
-  
-  .flex-container > div {
-    background-color: black;
-    border: 2px solid gray;
-    color:white;
-    margin: 7px;
-    padding: 20px;
+  #code>p{
     font-size: 30px;
   }
-  .this{
-    padding-left: 8px;
+  
+  #explain{
+    margin: 20px 0px;
+    border: 2px solid red;              /*  remove */
+    padding: 38px 53px;
   }
+  #explain>h2{
+    font-size: 4rem;
+    text-align: center;
+  }
+  #explain>p{
+    font-size: 30px;
+  }
+
+  #complex{
+    margin: 20px 0px;
+    border: 2px solid red;              /*  remove */
+    padding: 38px 53px;
+  }
+  #complex>h2{
+    font-size: 4rem;
+    text-align: center;
+  }
+  #complex>p{
+    font-size: 30px;
+  }
+  
   .footer {
-    background-color: gray;
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    justify-content: center;
     grid-column-start: 1;
     grid-column-end: -1;
   }
