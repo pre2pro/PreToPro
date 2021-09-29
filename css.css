@@ -1,0 +1,109 @@
+* {
+    background-color: rgb(16, 12, 29);
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 1850px 30px;
+    color: cyan;
+    grid-gap: 5px;
+  }
+  
+  .header {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    font-size: 70px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+  }
+  /* div.header{ */
+    /* position: sticky; */
+  /* } */
+  .menu {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: fixed;
+  }
+  #navmenu {
+    margin: 10px;
+  }
+  #navmenu {
+    padding: 0px;
+  }
+  /* .navm, .navm > li , .navm > li > a{
+          background-color: red; 
+          
+      } */
+  #navmenu > li {
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 10px 10px;
+  }
+  #navmenu > li > a {
+    text-decoration: none;
+    color: rgb(185, 216, 194);
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+  }
+  #navmenu > li > a:hover {
+    color: cyan;
+  }
+  
+  .content {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-rows: 150px 500px 500px 500px;
+      /* grid-column-start: 3; */
+    /* grid-column-end: -1; */
+  }
+  #lang {
+    border: 2px solid cyan;
+    height: 40px;
+    margin: 20px 10px;
+    padding: 26px 13px;
+    background-color: rgba(71, 69, 80, 0.281);
+  
+  }
+  #lang > a {
+    text-decoration: wavy;
+    text-align: center;
+    border: 2px solid cyan;
+    border-radius: 14px;
+    height: 30px;
+    font-size: x-large;
+    padding: 3px 69px;
+    margin: 4px;
+  }
+  #lang > a:hover {
+    color: cyan;
+    border-color: blue;
+  }
+  /* #recent {
+  } */
+  .flex-container {
+    display: flex;
+  }
+  
+  .flex-container > div {
+    background-color: black;
+    border: 2px solid gray;
+    color:white;
+    margin: 7px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  #cont{
+    background-color: pink;
+  }
+  .this{
+    padding-left: 8px;
+  }
+  .footer {
+    background-color: gray;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  
