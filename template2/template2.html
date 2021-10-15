@@ -38,42 +38,41 @@
 
         <p>
 
-          #include<stdio.h>     
-            
-            void main(){
-                int a[10][10], b[10][10], sum[10][10], i,j,n;
-            
-                printf("Enter the size of the square matrix: ");
-                scanf("%d", &n);
-                //a
-                printf("Enter the Elements of the matrix a of size %d x %d", n,n);
-                for(i=0; i<n; i++)
-                    {
-                        for(j=0; j<n; j++)
-                        scanf("%d", &a[i][j]);
-                    }
-            //b
-                printf("Enter the Elements of the matrix b of size %d x %d", n,n);
-                for(i=0; i<n; i++)
-                    {
-                        for(j=0; j<n; j++)
-                        scanf("%d", &b[i][j]);
-                    }
-            //sum a+b
-                printf("Sum of two matrices a & b is \n");
-                for(i=0; i<n; i++){
-                  for(j=0; j<n; j++)
-                            sum[i][j]= a[i][j] + b[i][j];
-                }
-            
-                for(i=0; i<n; i++){
-                  for(j=0; j<n; j++){
-                    printf("%4d", sum[i][j]);
-                  }
-                  printf("\n");
-                }
-              }
-              
+          #include< stdio.h >     <br>
+<br>            
+            void main(){          <br>
+                int a[10][10], b[10][10], sum[10][10], i,j,n;     <br>
+                printf("Enter the size of the square matrix: ");<br>
+                scanf("%d", &n);                                  <br>
+                //a                                                   <br>
+                printf("Enter the Elements of the matrix a of size %d x %d", n,n);<br>
+                for(i = 0; i < n; i++)                            <br>
+                    {                                               <br>
+                        for(j=0; j < n; j++)  <br>
+                        scanf("%d", &a[i][j]);  <br>
+                    }   <br>
+            //b     <br>
+                printf("Enter the Elements of the matrix b of size %d x %d", n,n);    <br>
+                for(i = 0; i < n; i++)      <br>
+                    {                     <br>
+                        for(j=0; j < n; j++)      <br>
+                        scanf("%d", &b[i][j]);      <br>
+                    }       <br>
+            //sum a+b     <br>
+                printf("Sum of two matrices a & b is \n");      <br>
+                for(i=0; i < n; i++){                     <br>
+                  for(j=0; j < n; j++)        <br>
+                            sum[i][j]= a[i][j] + b[i][j];   <br>
+                }     <br>
+    <br>        
+                for(i=0; i < n; i++){     <br>
+                  for(j=0; j < n; j++){    <br>
+                    printf("%4d", sum[i][j]);   <br>
+                  }     <br>
+                  printf("\n");     <br>
+                }     <br>
+              }     <br>
+   <br>           
               
             </p>
       </div>
